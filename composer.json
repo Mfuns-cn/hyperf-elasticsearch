@@ -1,5 +1,5 @@
 {
-    "name": "hyperf-ext/elasticsearch",
+    "name": "mfuns-cn/hyperf-elasticsearch",
     "type": "library",
     "license": "MIT",
     "keywords": [
