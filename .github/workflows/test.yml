@@ -1,0 +1,12 @@
+name: PHPUnit & PHPStan Test
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Test
+        run: cp -rf .github/Dockerfile . && docker build -t hyperf .

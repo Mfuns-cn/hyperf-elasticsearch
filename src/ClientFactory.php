@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 /**
  * This file is part of hyperf-ext/elasticsearch.
  *
@@ -8,8 +9,10 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/hyperf-ext/elasticsearch/blob/master/LICENSE
  */
+
 namespace HyperfExt\Elasticsearch;
 
+use Elasticsearch\Client;
 use Elasticsearch\ClientBuilder;
 use Hyperf\Contract\ConfigInterface;
 use Hyperf\Guzzle\RingPHP\CoroutineHandler;
@@ -20,7 +23,7 @@ use Swoole\Coroutine;
 
 class ClientFactory
 {
-    public function __invoke(ContainerInterface $container)
+    public function __invoke(ContainerInterface $container): Client
     {
         $config = $container->get(ConfigInterface::class)->get('elasticsearch');
 

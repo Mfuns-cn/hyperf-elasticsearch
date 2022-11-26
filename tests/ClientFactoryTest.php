@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 /**
  * This file is part of hyperf-ext/elasticsearch.
  *
@@ -8,6 +9,7 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/hyperf-ext/elasticsearch/blob/master/LICENSE
  */
+
 namespace HyperfTest\Elasticsearch;
 
 use Elasticsearch\Client;
@@ -25,7 +27,7 @@ use PHPUnit\Framework\TestCase;
  */
 class ClientFactoryTest extends TestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         ApplicationContext::setContainer($container = new Container((new DefinitionSourceFactory(true))()));
         $config = Mockery::mock(ConfigInterface::class);

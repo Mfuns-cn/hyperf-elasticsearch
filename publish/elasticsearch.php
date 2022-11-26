@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 /**
  * This file is part of hyperf-ext/elasticsearch.
  *
@@ -8,6 +9,7 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/hyperf-ext/elasticsearch/blob/master/LICENSE
  */
+
 return [
     /*
     |--------------------------------------------------------------------------
@@ -48,7 +50,7 @@ return [
     */
 
     'pool' => [
-        'enabled' => false,
+        'enabled' => true,
         'min_connections' => 1,
         'max_connections' => 30,
         'wait_timeout' => 3.0,

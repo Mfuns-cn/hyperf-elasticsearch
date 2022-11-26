@@ -1,11 +1,11 @@
 # Hyperf Elasticsearch 组件
 
 该组件为 [Elasticsearch](https://github.com/elastic/elasticsearch-php) 客户端的创建提供了工厂类封装。同时，得益于 [hyperf/guzzle](https://github.com/hyperf/guzzle) 协程组件，该组件为 Elasticsearch 的 `Handler` 实现了协程化，可配置为连接池模式。
-
+**仅适用于 Hyperf3.0+**
 ## 安装
 
 ```shell script
-composer require hyperf-ext/elasticsearch
+composer require mfuns-cn/elasticsearch
 ```
 
 > 如启用 Elasticsearch 客户端日志则需安装 [`hyperf/logger`](https://hyperf.wiki/2.0/#/zh-cn/logger) 组件。
@@ -13,7 +13,7 @@ composer require hyperf-ext/elasticsearch
 ## 发布配置
 
 ```shell script
-php bin/hyperf.php vendor:publish hyperf-ext/elasticsearch
+php bin/hyperf.php vendor:publish mfuns-cn/elasticsearch
 ```
 
 ## 配置
