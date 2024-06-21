@@ -21,6 +21,8 @@ use Hyperf\Logger\LoggerFactory;
 use Psr\Container\ContainerInterface;
 use Swoole\Coroutine;
 
+use function Hyperf\Support\make;
+
 class ClientFactory
 {
     public function __invoke(ContainerInterface $container): Client
