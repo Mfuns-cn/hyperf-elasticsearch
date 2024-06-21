@@ -28,7 +28,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": ">=8.0",
+        "php": ">=8.1",
         "elasticsearch/elasticsearch": "^7.13",
         "hyperf/config": "3.1.*",
         "hyperf/di": "3.1.*",
